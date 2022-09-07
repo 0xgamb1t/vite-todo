@@ -10,23 +10,90 @@
   <body>
     <div class="main" id="app">
       
-      <section class="greeting">
-        <h2 class="title">
-          <input type="text" id="name" name="name" placeholder="Name's">
-          <span id="greeting-msg">Todo List</span>
-        </h2>
+      <section class="page-title">
+        <!-- <span id="greeting-msg">'s Todo List</span> -->
+        <input type="text" id="name" name="name" placeholder="{Name's Todo List}" size="18">
       </section>
 
-      <section class="create-todo">
-        <div class="button" id="create-todo-btn">New Item +</div>
+      <section class="project-btn">
+        <div class="button" id="new-project-btn">New Project +</div>
       </section>
 
-      <section class="newForm" id="newProjectForm">
+      <section class="project-modal-bg">
         <!-- 
           form elements neeed:
           1.title
-          2.
+          2.description
+          3.due date
+          4.due time : not needed
+          5.tasks : input on screen change
+          6.priority
          -->
+        <div class="project-modal-content">
+          <div class="close-btn">X</div>
+          <form action="#" class="project-form">
+            <div class="project-form-section" id="title-section">
+              <input type="text" name="title" placeholder="Title">
+            </div>
+            <div class="project-form-section" id="description-section">
+              <span class="project-sub-title">Description:</span>
+              <input type="text" name="description">
+            </div>
+            <div class="project-form-section" id="priority-section">
+              <span class="project-sub-title">Priority:</span>
+              <label>
+                <span>green</span>
+                <input
+                  type="radio"
+                  name="priority"
+                  id="priority1"
+                  value="green">
+              </label>
+              <label>
+                <span>yellow</span>
+                <input
+                  type="radio"
+                  name="priority"
+                  id="priority2"
+                  value="yellow">
+              </label>
+              <label>
+                <span>red</span>
+                <input
+                  type="radio"
+                  name="priority"
+                  id="priority3"
+                  value="red">
+              </label>
+            </div>
+          
+            <div class="project-form-section" id="tasks-section">
+              <span class="project-sub-title">Tasks:</span>
+              <input type="text" name="task1" placeholder="task1">
+              <input type="text" name="task2" placeholder="task2">
+              <input type="text" name="task3" placeholder="task3">
+            </div>
+            <div class="project-form-section" id="submit-section">
+              <div class="button">Submit</div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <div>Project List</div>
+        <div class="projects">
+          <div class="project1">
+            <div>This is an example project: Heading</div>
+            <div>delete button</div>
+            <div>expand button</div>
+            <div>complete tick</div>
+            <div></div>
+
+          </div>
+
+        </div>
+
       </section>
       
       <!-- <section class="newForm" id="newTask"></section> -->

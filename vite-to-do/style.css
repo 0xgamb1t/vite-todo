@@ -1,74 +1,108 @@
+:root {
+  --primary: #ea40a4;
+  --seconady: #3a82ee;
+  --light: #eee;
+  --grey: #888;
+  --dark: #313154;
+  --danger: #ff5b57;
 
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
 
-:root {  
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  /* -webkit-font-smoothing: antialiased; */
-  -moz-osx-font-smoothing: grayscale;
-  /* -webkit-text-size-adjust: 100%; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monserrat', sans-serif;
 }
 
 
 
-#app-background {
+body {
+  background: var(--light);
+  color: var(--dark);
+}
+
+#app {
   display: grid;
-  justify-content: center;
-  background-color: blue;
-}
-
-#app-container {
-  display: grid;
-  width: 1200px;
-  grid-template-rows: 2fr 6fr;
-  background-color: blueviolet;
-}
-
-#app-header {
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-}
-
-#app-body {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-
-.example-project {
-  height: 100px;
-  width: 350px;
-  background-color: aliceblue;
-}
-
-#newTaskBtn {
-  width: 80px;
-}
-
-.bg-modal {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-  position: absolute;
-  top: 0;
-  display: flex;
+  margin-top: 4rem;
   justify-content: center;
-  align-items: center;
+  justify-items: center;
 }
 
-.modal-content {
+section {
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.page-title input, .page-title span {
+  text-align: center;
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: 700;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: initial;
+}
+
+.button {
+  background-color: red;
+  border-radius: 5px;
+  padding: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.project-modal-bg{
+  display: none;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: red;
+  justify-content: center;
+}
+
+.project-modal-content { 
+  width: 500px;
+  background-color: green;
+}
+
+#description-section {
   display: grid;
-  grid-template-rows: 2fr 10fr;
-  padding: 20px;
-  height: 500px;
-  width: 400px;
-  background-color: yellow;
-  border-radius: 15px;
-  color: #242424;
 }
 
+#priority-section {
+  display: grid;
+}
+
+#tasks-section {
+  display: grid;
+}
+
+#submit-section {
+  display: grid;
+  justify-content: right;
+}
+
+.active {
+  display: grid;
+}
+
+input {
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: initial;
+  /* background: none; */
+}
+
+.project1 {
+  background-color: antiquewhite;
+  width: 500px;
+}
