@@ -30,14 +30,14 @@
           6.priority
          -->
         <div class="project-modal-content">
-          <div class="close-btn">X</div>
-          <form action="#" class="project-form">
+          <form action="#" class="project-form" id="project-form">
+            <div class="close-btn" id="form-close-btn">X</div>
             <div class="project-form-section" id="title-section">
-              <input type="text" name="title" placeholder="Title">
+              <input type="text" name="title" placeholder="Title" id="project-form-title">
             </div>
             <div class="project-form-section" id="description-section">
               <span class="project-sub-title">Description:</span>
-              <input type="text" name="description">
+              <input type="text" name="description" id="project-form-description">
             </div>
             <div class="project-form-section" id="priority-section">
               <span class="project-sub-title">Priority:</span>
@@ -74,7 +74,7 @@
               <input type="text" name="task3" placeholder="task3">
             </div>
             <div class="project-form-section" id="submit-section">
-              <div class="button">Submit</div>
+              <div class="button" id="project-form-submit">Submit</div>
             </div>
           </form>
         </div>

@@ -70,7 +70,7 @@ section {
 
 .project-modal-content { 
   width: 500px;
-  background-color: green;
+  background-color: var(--grey);
 }
 
 #description-section {
@@ -94,13 +94,17 @@ section {
   display: grid;
 }
 
-input {
+.inactive {
+  display: none;
+}
+
+/* input {
   appearance: none;
   border: none;
   outline: none;
   cursor: initial;
-  /* background: none; */
-}
+  background: none;
+} */
 
 .project1 {
   background-color: antiquewhite;

@@ -1,3 +1,6 @@
 import './style.css'
 import './newTaskModal.js'
 import './newProjectFormView'
+import './project_form/submitData.js'
+import './project_form/closeBtn.js'
+import './project_form/closeBG.js'
