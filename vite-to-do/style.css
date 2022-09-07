@@ -1,0 +1,74 @@
+
+
+:root {  
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  /* -webkit-font-smoothing: antialiased; */
+  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-text-size-adjust: 100%; */
+}
+
+
+
+#app-background {
+  display: grid;
+  justify-content: center;
+  background-color: blue;
+}
+
+#app-container {
+  display: grid;
+  width: 1200px;
+  grid-template-rows: 2fr 6fr;
+  background-color: blueviolet;
+}
+
+#app-header {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+#app-body {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.example-project {
+  height: 100px;
+  width: 350px;
+  background-color: aliceblue;
+}
+
+#newTaskBtn {
+  width: 80px;
+}
+
+.bg-modal {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  display: grid;
+  grid-template-rows: 2fr 10fr;
+  padding: 20px;
+  height: 500px;
+  width: 400px;
+  background-color: yellow;
+  border-radius: 15px;
+  color: #242424;
+}
+
